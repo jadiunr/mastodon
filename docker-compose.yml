@@ -35,7 +35,7 @@ services:
 
   web:
     # build: .
-    image: &mastodon tootsuite/mastodon:v3.1.0
+    image: &mastodon tootsuite/mastodon:v3.1.1
     restart: always
     env_file: .env.production
     command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rails s -p 3000"
